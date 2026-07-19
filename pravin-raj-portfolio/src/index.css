@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Outfit:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Plus Jakarta Sans", "Inter", ui-sans-serif, sans-serif;
+  --font-display: "Outfit", "Space Grotesk", sans-serif;
+  --font-serif: "Cormorant Garamond", Georgia, Cambria, "Times New Roman", Times, serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+}
+
+/* Custom Styles */
+html {
+  scroll-behavior: smooth;
+  background-color: #050505;
+  color: #f1f5f9;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Global Text Contrast Booster */
+/* Overrides standard low-opacity tailwind utilities to ensure readability against dynamic canvas */
+.text-white\/20 {
+  color: rgba(241, 245, 249, 0.45) !important;
+}
+.text-white\/30 {
+  color: rgba(241, 245, 249, 0.58) !important;
+}
+.text-white\/40, .text-white\/45 {
+  color: rgba(241, 245, 249, 0.72) !important;
+}
+.text-white\/50, .text-white\/60 {
+  color: rgba(255, 255, 255, 0.88) !important;
+}
+
+/* Custom dark scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #050505;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #111113;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #1c1c20;
+}
+
+/* Custom selections */
+::selection {
+  background-color: #00f2fe;
+  color: #000000;
+}

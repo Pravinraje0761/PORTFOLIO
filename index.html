@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A smooth, cinematic scroll-driven canvas animation sequence.">
+  <title>Cinematic Scroll Experience</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <!-- Blank Caching Overlay -->
+  <div id="loader" class="loader-container" role="status" aria-live="polite"></div>
+
+  <!-- Fullscreen Fixed Canvas Container -->
+  <div class="canvas-container">
+    <canvas id="animation-canvas"></canvas>
+  </div>
+
+  <!-- Scroll Container defining the scroll depth -->
+  <main class="scroll-container" id="main-scroll-area"></main>
+
+  <script type="module" src="/script.js"></script>
+</body>
+</html>
