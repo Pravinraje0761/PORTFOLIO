@@ -1,20 +1,12 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://ai.google.dev/static/site-assets/images/share-ais-513315318.png" />
-</div>
+# Portfolio site
 
-# Run and deploy your AI Studio app
+React 19 + TypeScript + Vite + Tailwind CSS. See the [top-level README](../README.md).
 
-This contains everything you need to run your app locally.
+```bash
+npm install
+npm run dev     # http://localhost:3000
+npm run lint    # type-check
+npm run build   # dist/, deployed to GitHub Pages by .github/workflows/deploy.yml
+```
 
-View your app in AI Studio: https://ai.studio/apps/21afaef0-d8e9-40eb-b268-1497169e9c9e
-
-## Run Locally
-
-**Prerequisites:**  Node.js
-
-
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+When built inside GitHub Actions the site is served from `/PORTFOLIO/` (see `vite.config.ts`).
